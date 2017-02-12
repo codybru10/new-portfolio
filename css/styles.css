@@ -1,0 +1,35 @@
+body {
+     background-image: url('./images/background.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+     margin: 0;
+ }
+
+.welcome {
+  margin-top: 40%;
+  margin-bottom: 60%;
+  color: white;
+  text-align: center;
+}
+
+
+ .fixed {
+ width: 200px;
+ position: fixed;
+ top: 10px;
+ bottom:0px;
+ right:0px;
+ left:auto;
+}
+
+#map {
+       height: 50%;
+       width: 80%;
+     }
+     /* Optional: Makes the sample page fill the window. */
+     html, body {
+       height: 100%;
+       margin: 0;
+       padding: 0;
+     }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+
+    <div class="col hide-on-small-only m3 l2 fixed">
+      <ul class="section table-of-contents">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </div>
+
+    <div class="welcome pin-top">
+      <h3>Cody Brubaker</h3>
+      <h5>Junior Web Developer</h5>
+    </div>
+
+    <div id="map"></div>
+
+    <div class="row pin-bottom">
+      <div class="col s12 m9 l10">
+        <div id="about" class="section card scrollspy">
+          <p>What is Lorem Ipsum?
+
+          </p>
+        </div>
+
+        <div id="skills" class="section card scrollspy">
+          <p>The standard Lorem Ipsum passage, used since the 1500s
+
+          </p>
+        </div>
+
+        <div id="projects" class="section card scrollspy">
+          <p>And the end of skdafjalksdfjal;ksdjfa;lksj klsdjf k lajfjklasdjkj fdhbjklasj  </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+      function initMap() {
+        var home = {lat: 41.34, lng: -83.29};
+        var bgsu = {lat: 41.37, lng: -83.65};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 6,
+          center: home
+        });
+
+        var marker = new google.maps.Marker({
+          position: home,
+          map: map,
+          title: 'Hello World!'
+        });
+        var marker = new google.maps.Marker({
+          position: bgsu,
+          map: map,
+          title: 'Hello World!'
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYI5e79Nt1pg7lL2T4w4QcCTKQxYgsSsU&callback=initMap">
+    </script>
+
+
+
+  </body>
+</html>
