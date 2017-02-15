@@ -26,34 +26,24 @@
       </div>
     </div>
 
-    <div id="map"></div>
 
-    <div class="row">
-        <div id="about" class="section card scrollspy">
-          <div class="col s12 m7">
-            <h2 class="header">About</h2>
-            <div class="card horizontal">
-              <div class="card-image">
-                <img src="./css/images/me.jpg">
-              </div>
-              <div class="card-stacked">
-                <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div id="about" class="section wrapper2 scrollspy">
+          <h2 class="header">About</h2>
+          <img class="img-circle" src="./css/images/me.jpg">
+          <p>I am a very simple card. I am good at containing small bits of information.</p>
         </div>
-      </div>
+
+        <div class="map-wrapper">
+          <div id="map"></div>
+        </div>
 
         <div id="skills" class="section wrapper1 scrollspy">
           <h2>Skills</h2>
-          <p>The standard Lorem Ipsum passage, used since the 1500s
-
-          </p>
+          <p>The standard Lorem Ipsum passage, used since the 1500s</p>
         </div>
 
         <div id="projects" class="section wrapper2 scrollspy">
+          <h2>Projects</h2>
           <p>And the end of skdafjalksdfjal;ksdjfa;lksj klsdjf k lajfjklasdjkj fdhbjklasj  </p>
         </div>
       </div>
@@ -62,7 +52,7 @@
     <footer class="page-footer black">
       <div class="container">
         <a class="grey-text text-lighten-3" href="https://github.com/codybru10"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
-        <a class="grey-text text-lighten-3" href="https://github.com/codybru10"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+        <a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/cody-brubaker/"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
       </div>
      </footer>
 
@@ -71,21 +61,33 @@
       function initMap() {
         var home = {lat: 41.34, lng: -83.29};
         var bgsu = {lat: 41.37, lng: -83.65};
+        var epic = {lat: 45.5206, lng: -122.6774};
+        var uis = {lat: 41.1133061, lng: -83.1713789};
 
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 6,
+          zoom: 4,
           center: home
         });
 
         var marker = new google.maps.Marker({
           position: home,
           map: map,
-          title: 'Hello World!'
+          title: 'Home!'
         });
         var marker = new google.maps.Marker({
           position: bgsu,
           map: map,
-          title: 'Hello World!'
+          title: 'Bowling Green State University'
+        });
+        var marker = new google.maps.Marker({
+          position: epic,
+          map: map,
+          title: 'Epicodys'
+        });
+        var marker = new google.maps.Marker({
+          position: uis,
+          map: map,
+          title: 'United Insurance Service'
         });
       }
     </script>

@@ -32,8 +32,9 @@ h3 {
 }
 
 #map {
-       height: 50%;
-       width: 80%;
+       height: 100%;
+       width: 100%;
+       border: solid black 5px;
      }
      /* Optional: Makes the sample page fill the window. */
      html, body {
@@ -43,22 +44,37 @@ h3 {
      }
 
 .wrapper1 {
-  height: 35%;
+  height: 50%;
   width: 100%;
   background: red;
   padding-left: 10%;
   padding-right: 10%;
 }
 .wrapper2 {
-  height: 35%;
+  height: 50%;
   width: 100%;
   background: blue;
   padding-left: 10%;
   padding-right: 10%;
 }
 
+.map-wrapper {
+  background: grey;
+  height: 35%;
+  width: 80%;
+  margin: 0 auto; 
+}
+
+#inner {
+    width: 50%;
+}
+
 footer {
   margin-bottom: 0;
   background: black;
   padding-bottom: 10px;
+}
+
+.img-circle {
+  border-radius: 50%;
 }
